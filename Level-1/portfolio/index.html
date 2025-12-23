@@ -1,0 +1,273 @@
+<!--
+Portfolio Website
+Created by Chaithanya Dandempally
+Internship: OASIS INFOBYTE (Web Development & Designing)
+Technologies: HTML, CSS, Bootstrap
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chaithanya Dandempally | Portfolio</title>
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
+
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        .navbar {
+            background: #2c3e50;
+        }
+
+        .navbar-nav .nav-link {
+            color: white;
+            font-weight: 600;
+            margin: 0 10px;
+        }
+
+        .navbar-nav .nav-link:hover {
+            color: #1abc9c;
+        }
+
+        .hero {
+            height: 100vh;
+            background: linear-gradient(135deg, #2c3e50, #1abc9c);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            color: white;
+            text-align: center;
+        }
+
+        .hero img {
+            width: 260px;
+            height: 260px;
+            border-radius: 50%;
+            padding: 6px;
+            background: linear-gradient(135deg, #1abc9c, #3498db, #9b59b6);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+        }
+
+        section {
+            padding: 70px 0;
+        }
+
+        section h2 {
+            text-align: center;
+            font-weight: 700;
+            margin-bottom: 40px;
+            color: #2c3e50;
+        }
+
+        section h2::after {
+            content: "";
+            width: 60px;
+            height: 4px;
+            background: #1abc9c;
+            display: block;
+            margin: 10px auto 0;
+            border-radius: 2px;
+        }
+
+        .skill-badge {
+            background: #1abc9c;
+            color: white;
+            padding: 8px 14px;
+            border-radius: 20px;
+            margin: 5px;
+            display: inline-block;
+            font-size: 0.9rem;
+        }
+
+        .card {
+            border: none;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        footer {
+            background: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        footer a {
+            color: #1abc9c;
+            margin: 0 10px;
+            font-size: 1.2rem;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#home">Chaithanya</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#certifications">Certifications</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <section class="hero" id="home">
+        <img src="profile.jpg" alt="Chaithanya Dandempally">
+        <h1 class="mt-4">Chaithanya Dandempally</h1>
+        <p>Entry-Level Full Stack Java Developer | Java | Spring Boot | SQL | Web Development</p>
+        <a href="#about" class="btn btn-light mt-3">Explore My Portfolio</a>
+        <a href="chaithanya.resume.pdf" target="_blank" class="btn btn-warning mt-3">View Resume</a>
+    </section>
+
+
+    <section id="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <p class="text-center">
+                Entry-level Full Stack Java Developer with hands-on experience building end-to-end web applications
+                using
+                Java, Spring Boot, Servlets/JSP, MySQL, HTML, CSS, JavaScript, and React.js.
+                Strong foundation in object-oriented programming and database design with practical project experience
+                delivering secure and performance-optimized solutions.
+                Seeking an entry-level Java or Full Stack Developer role in a collaborative engineering environment.
+            </p>
+        </div>
+    </section>
+
+
+    <section id="skills" class="bg-light">
+        <div class="container">
+            <h2>Technical Skills</h2>
+            <div class="text-center">
+                <span class="skill-badge">Java</span>
+                <span class="skill-badge">SQL</span>
+                <span class="skill-badge">HTML5</span>
+                <span class="skill-badge">CSS3</span>
+                <span class="skill-badge">JavaScript (ES6+)</span>
+                <span class="skill-badge">React.js</span>
+                <span class="skill-badge">Spring Boot</span>
+                <span class="skill-badge">Servlets & JSP</span>
+                <span class="skill-badge">JDBC</span>
+                <span class="skill-badge">REST APIs (Basic)</span>
+                <span class="skill-badge">MySQL</span>
+                <span class="skill-badge">Git & GitHub</span>
+                <span class="skill-badge">VS Code</span>
+                <span class="skill-badge">Eclipse</span>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="projects">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="row g-4">
+
+                <div class="col-md-4">
+                    <div class="card p-3">
+                        <h5>Online Bookstore Website</h5>
+                        <p>
+                            Full stack web application developed using Java Servlets, JSP, and MySQL.
+                            Implemented secure authentication, book catalog, and order management.
+                        </p>
+                        <p><strong>Technologies:</strong> Java, Servlets, JSP, MySQL, HTML, CSS</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card p-3">
+                        <h5>Driver Drowsiness Detection</h5>
+                        <p>
+                            CNN-based real-time driver fatigue detection system with web interface.
+                            Achieved approximately 85% detection accuracy.
+                        </p>
+                        <p><strong>Technologies:</strong> Python, OpenCV, CNN, Flask</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card p-3">
+                        <h5>Crowdfunding Platform</h5>
+                        <p>
+                            Blockchain-based crowdfunding system ensuring transparency using smart contracts
+                            with integrated backend services.
+                        </p>
+                        <p><strong>Technologies:</strong> Solidity, JavaScript, HTML, CSS</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <section id="certifications" class="bg-light">
+        <div class="container">
+            <h2>Certifications</h2>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">Oracle Java Foundations – Oracle (2024)</li>
+                <li class="list-group-item">AWS Cloud Practitioner – Amazon Web Services (2025)</li>
+                <li class="list-group-item">Data Structures Using Python – Udemy (2025)</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2>Contact</h2>
+            <div class="text-center">
+                <p>📧 <a href="mailto:chaithanyadandempally@gmail.com">chaithanyadandempally@gmail.com</a></p>
+                <p>📱 8688320829</p>
+                <a href="https://www.linkedin.com/in/chaithanya-dandempally-274b59374" target="_blank"
+                    class="btn btn-dark mt-2">
+                    <i class="fab fa-linkedin"></i> LinkedIn
+                </a>
+                <a href="chaithanya.resume.pdf" target="_blank" class="btn btn-primary mt-2">
+                    <i class="fas fa-file-pdf"></i> Resume
+                </a>
+            </div>
+        </div>
+    </section>
+
+
+    <footer>
+        <p>© 2025 Chaithanya Dandempally</p>
+        <a href="https://www.linkedin.com/in/chaithanya-dandempally-274b59374" target="_blank"><i
+                class="fab fa-linkedin"></i></a>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
